@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Family Recognizer</title>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Family Recognizer</h1>
+    <br>
+    <h3>This model is trained to recognise these family members :-</h3><br>
+    <b>
+        Dad
+        <hr>
+        Mom
+        <hr>
+        Sister
+        <hr>
+        Myself
+    </b>
+    <br><br>
+    <h4>Here is your webcam view :-</h4>
+    <div id="webcam"></div><br><br>
+    <h4>Here is your preview :-</h4>
+    <div id="preview"></div><br><br>
+
+    <button class="btn btn-success" onclick="take_snapshot()">Capture Photo</button>
+    <button class="btn btn-info"onclick="check()">Identify Photo</button><br><br>
+
+    <h4>Here is the name of the identified person :- <span id="person"></span></h4><br>
+    <h4>Here is the accuracy level :- <span id="accuracy_level"></span></h4>
+</body>
+</html>
